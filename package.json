@@ -1,6 +1,6 @@
 {
   "name": "@kjn/vite-plugin-tsc-typecheck",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Vite plugin that tests for typescript type errors on `vite build`",
   "scripts": {
     "build": "tsc-dual-build",
