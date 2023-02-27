@@ -19,6 +19,7 @@
   "files": [
     "dist/**/*"
   ],
+  "types": "dist/index.d.ts",
   "exports": {
     "import": "./dist/esm/index.js",
     "require": "./dist/cjs/index.js"
@@ -36,7 +37,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
-    "@kjn/tsc-dual-build": "^1.0.3",
+    "@kjn/tsc-dual-build": "^1.1.0",
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.7",
