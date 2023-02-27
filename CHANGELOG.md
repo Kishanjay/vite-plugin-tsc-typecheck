@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Kishanjay/vite-plugin-tsc-typecheck/compare/v1.0.0...v1.0.1) (2023-02-27)
+
+
+### Bug Fixes
+
+* update publishConfig to public ([3c1f935](https://github.com/Kishanjay/vite-plugin-tsc-typecheck/commit/3c1f935ed7d818081570311594bf4c24669f04fe))
+
 # 1.0.0 (2023-02-27)
 
 
