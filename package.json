@@ -3,8 +3,11 @@
   "version": "1.0.1",
   "description": "Vite plugin that tests for typescript type errors on `vite build`",
   "scripts": {
+    "clean": "rimraf dist",
     "build": "tsc-dual-build",
-    "prepare": "husky install"
+    "prepack": "run-s clean build",
+    "prepare": "husky install",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -14,7 +17,7 @@
     "access": "public"
   },
   "files": [
-    "./dist/*"
+    "dist/**/*"
   ],
   "exports": {
     "import": "./dist/esm/index.js",
@@ -33,6 +36,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
+    "@kjn/tsc-dual-build": "^1.0.3",
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.7",
@@ -41,8 +45,9 @@
     "eslint-config-prettier": "^8.6.0",
     "husky": "^7.0.0",
     "json5": "^2.2.3",
+    "npm-run-all": "^4.1.5",
     "prettier": "2.8.4",
-    "typescript": "^4.9.5",
-    "@kjn/tsc-dual-build": "^1.0.3"
+    "rimraf": "^4.1.2",
+    "typescript": "^4.9.5"
   }
 }
