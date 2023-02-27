@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Kishanjay/vite-plugin-tsc-typecheck/compare/v1.0.2...v1.0.3) (2023-02-27)
+
+
+### Bug Fixes
+
+* additionally export types.d.ts ([93d3d2f](https://github.com/Kishanjay/vite-plugin-tsc-typecheck/commit/93d3d2f731abd397b71b19a8d5259a873b3347d4))
+
 ## [1.0.2](https://github.com/Kishanjay/vite-plugin-tsc-typecheck/compare/v1.0.1...v1.0.2) (2023-02-27)
 
 
