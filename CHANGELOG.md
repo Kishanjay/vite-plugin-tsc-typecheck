@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Kishanjay/vite-plugin-tsc-typecheck/compare/v1.0.1...v1.0.2) (2023-02-27)
+
+
+### Bug Fixes
+
+* add missing files in package ([89d36d9](https://github.com/Kishanjay/vite-plugin-tsc-typecheck/commit/89d36d940f1eb22990ceaa0cd2fa367cc560f9fb))
+
 ## [1.0.1](https://github.com/Kishanjay/vite-plugin-tsc-typecheck/compare/v1.0.0...v1.0.1) (2023-02-27)
 
 
