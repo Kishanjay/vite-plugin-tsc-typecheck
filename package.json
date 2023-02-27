@@ -1,0 +1,41 @@
+{
+  "name": "@kjn/vite-plugin-tsc-typecheck",
+  "version": "0.0.1",
+  "description": "Vite plugin that tests for typescript type errors on `vite build`",
+  "scripts": {
+    "build": "node tsc-dual-build tsconfig.json",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kishanjay/vite-plugin-tsc-typecheck.git"
+  },
+  "files": [
+    "./dist/*"
+  ],
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js"
+  },
+  "keywords": [
+    "Vite",
+    "Typescript"
+  ],
+  "author": "Kishan Nirghin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kishanjay/vite-plugin-tsc-typecheck/issues"
+  },
+  "homepage": "https://github.com/Kishanjay/vite-plugin-tsc-typecheck#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@types/node": "^18.14.2",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "eslint-config-prettier": "^8.6.0",
+    "husky": "^7.0.0",
+    "json5": "^2.2.3",
+    "prettier": "2.8.4",
+    "typescript": "^4.9.5"
+  }
+}
