@@ -2,22 +2,22 @@
 
 [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 
+[![npm version](https://badge.fury.io/js/@kjn%2Fvite-plugin-tsc-typecheck.svg)](https://www.npmjs.com/package/@kjn/vite-plugin-tsc-typecheck)
+
 The repo holds the vite plugin for typechecking with typescript.
 
 ## How to use
 
-Add `tscTypecheck` as a plugin in `vite.config.js`. This will 
+```sh
+npm i @kjn/vite-plugin-tsc-typecheck
+```
 
 ```ts
+import { tscTypecheck } from "@kjn/vite-plugin-tsc-typecheck";
+
 export default defineConfig({
-  plugins: [
-    /**
-     * ...
-     * ...
-     * The rest of your plugins
-     */
-    tscTypecheck()
-  ],
+  plugins: [tscTypecheck()],
+
   /**
    * ...
    * ...
@@ -26,8 +26,16 @@ export default defineConfig({
 });
 ```
 
-Now when autobuilding using `vite build --watch` an additional typechecking step will be executed. You'll see if there are typescript type errors.
+Output you'll see in your terminal
 
+```sh
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+🕵️‍♂️ [tsc-typecheck] Testing for type errors
+✅ [tsc-typecheck] All good
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+```
+
+Now when autobuilding using `vite build --watch` an additional typechecking step will be executed. You'll see if there are typescript type errors.
 
 Now when building using `vite build` the additional typechecking step will be executed. You'll see if there are typescript type errors.
 

@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/Kishanjay/vite-plugin-tsc-typecheck.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "./dist/*"
   ],
